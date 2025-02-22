@@ -15,7 +15,9 @@ mod db {
 }
 
 use actix_web::{web, App, HttpServer};
-use controllers::users_controller::{add_user, cause_error, delete_user_by_id, get_user_by_id, get_users};
+use controllers::users_controller::{
+    add_user, cause_error, delete_user_by_id, get_user_by_id, get_users,
+};
 use db::fake_db::FakeDb;
 
 #[actix_web::main]

@@ -23,4 +23,12 @@ impl<T> ApiResponse<T> {
             error: Some(message.to_string()),
         }
     }
+
+    pub fn success_without_body() -> Self {
+        ApiResponse {
+            status: "success".to_string(),
+            data: None,
+            error: None,
+        }
+    }
 }
